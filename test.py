@@ -7,6 +7,7 @@
 
 from torchvision import models
 from torchsummary import summary
+from models import vgg
 
-net = models.resnet18(pretrained=False)
+net = vgg.vgg11(pretrained=False)
 print(net)
